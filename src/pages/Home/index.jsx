@@ -1,14 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import ActionsBar from '../../components/ActionsBar';
+import AssetList from '../../components/AssetList';
+import Header from '../../components/Header';
+import ReferralBanner from '../../components/ReferralBanner';
+import { assets, user } from '../../mocks/homeData';
+import { Amount, Label, PageWrapper } from './styles';
 
 const Home = () => {
   return (
-    <div style={{ padding: 40 }}>
-      <h1>Добро пожаловать!</h1>
-      <p>
-        <Link to="/onboarding">Перейти к онбордингу</Link>
-      </p>
-    </div>
+    <PageWrapper>
+      <Header user={user} />
+      <div>
+        <Label>Общий баланс</Label>
+        <Amount>{user.balance} ₽</Amount>
+      </div>
+      <ActionsBar />
+      <ReferralBanner />
+      <AssetList assets={assets} />
+    </PageWrapper>
   );
 };
 

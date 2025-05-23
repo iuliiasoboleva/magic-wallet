@@ -17,7 +17,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   #root {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
   button, input, p, h1, h2, h3 {

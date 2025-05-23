@@ -24,7 +24,6 @@ const slides = [
       size: 'contain',
       topOffset: '-85px',
       horizontalPadding: '24px',
-      height: '65%',
     },
   },
   {
@@ -33,9 +32,8 @@ const slides = [
     description: 'Переводите цифровые активы\nв Magic Wallet без каких-либо комиссий\nи задержек.',
     backgroundProps: {
       size: 'contain',
-      topOffset: '-155px',
+      topOffset: '-50px',
       horizontalPadding: '0px',
-      height: '100%',
     },
   },
   {
@@ -46,7 +44,6 @@ const slides = [
       size: 'contain',
       topOffset: '35px',
       horizontalPadding: '16px',
-      height: '65%',
     },
   },
 ];
@@ -86,7 +83,6 @@ const Onboarding = () => {
           $size={current.backgroundProps.size}
           $top={current.backgroundProps.topOffset}
           $padding={current.backgroundProps.horizontalPadding}
-          $height={current.backgroundProps.height}
         />
         <Card>
           <Dots>

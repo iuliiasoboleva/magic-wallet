@@ -35,7 +35,7 @@ export const Background = styled.div`
   background-position: top center;
   background-size: ${(props) => props.$size || 'contain'};
   padding: 0 ${(props) => props.$padding || '0'};
-  height: ${(props) => props.$height || '65%'};
+  height: 65%;
   z-index: 0;
   pointer-events: none;
   opacity: 0;
