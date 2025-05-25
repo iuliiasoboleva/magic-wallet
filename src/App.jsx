@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import MainLayout from './layouts/MainLayout';
+import Auth from './pages/Auth';
 import Home from './pages/Home';
 import Onboarding from './pages/Onboarding';
 import { GlobalStyle } from './styles/GlobalStyle';
@@ -20,6 +21,7 @@ function App() {
             </MainLayout>
           }
         />
+        <Route path="/auth" element={<Auth />} />
       </Routes>
     </>
   );

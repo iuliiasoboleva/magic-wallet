@@ -1,5 +1,8 @@
 import '@fontsource/inter-tight';
-// по умолчанию 400
+import '@fontsource/inter-tight/400.css';
+import '@fontsource/inter-tight/500.css';
+import '@fontsource/inter-tight/600.css';
+
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`

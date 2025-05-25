@@ -128,28 +128,3 @@ export const Description = styled.p`
   margin-bottom: 20px;
   white-space: pre;
 `;
-
-export const Button = styled.button`
-  background: #635aff;
-  box-sizing: border-box;
-  width: 100%;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 130%;
-  letter-spacing: 0px;
-  border: none;
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
-  margin-top: auto;
-
-  &:hover {
-    background: #574fe0;
-  }
-`;

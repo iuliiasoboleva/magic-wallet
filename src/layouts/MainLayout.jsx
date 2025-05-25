@@ -1,4 +1,5 @@
 import React from 'react';
+
 import TabBar from '../components/TabBar';
 import { Content, Wrapper } from './styles';
 

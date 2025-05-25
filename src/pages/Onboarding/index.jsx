@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import CustomButton from '../../components/CustomButton';
 import {
   Background,
-  Button,
   Card,
   Container,
   Description,
@@ -68,7 +68,7 @@ const Onboarding = () => {
     if (step < slides.length - 1) {
       setStep((prev) => prev + 1);
     } else {
-      navigate('/');
+      navigate('/auth');
     }
   };
 
@@ -98,7 +98,7 @@ const Onboarding = () => {
           </Dots>
           <Title>{current.title}</Title>
           <Description>{current.description}</Description>
-          <Button onClick={handleNext}>Продолжить</Button>
+          <CustomButton onClick={handleNext}>Продолжить</CustomButton>
         </Card>
       </Slide>
     </Container>

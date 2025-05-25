@@ -36,3 +36,39 @@ export const Amount = styled.p`
   text-align: center;
   color: #ffffff;
 `;
+
+export const Title = styled.h2`
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0px;
+  color: #030035;
+  text-align: center;
+  margin-bottom: 12px;
+  max-width: 228px;
+`;
+
+export const Subtitle = styled.p`
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0px;
+  color: #817c8a;
+  text-align: center;
+  max-width: 274px;
+`;
+
+export const Image = styled.img`
+  height: auto;
+  width: 150px;
+  object-fit: cover;
+  margin-right: 40px;
+`;
+
+export const ButtonBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin-top: 20px;
+`;
